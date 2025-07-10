@@ -1,0 +1,27 @@
+database:
+  host: localhost
+  user: economy
+  password: fortnite11
+  databaseName: economy
+  port: 3306
+
+currencyName: " Tradebars"
+USTime: true
+messages:
+  defaultColor: "§b"
+  prefix: "㔥 "
+  balance:
+    selfBalance: "&8Your balance is &f㒖&7{value} Tradebars"
+    otherBalance: "&7{player}'s&8 balance is &f㒖&7{value} Tradebars"
+    setBalance: "&7{player}'s&8 balance is set to &f㒖&7{value} Tradebars"
+  payment:
+    paymentSent: "&8You have payed &7{player} &f㒖&7{value} Tradebars"
+    paymentReceived: "&7{player}&8 has paid you &f㒖&7{value} Tradebars"
+    paymentNoMoney: "&cYou don't have enough money to transfer &7{player} &f㒖&7{value} Tradebars"
+  history:
+    standardHistory:
+      moneyFromPlayer: "&2{time}&8 You sent &f㒖&7{value} Tradebars to {player}"
+      moneyToPlayer: "&{time}&8 {player} sent you &f㒖&7{value} Tradebars"
+    adminHistory:
+      moneyFromPlayer: "&2{time}&8 {selectedPlayer} sent &f㒖&7{value} Tradebars to {player}"
+      moneyToPlayer: "&2{time}&8 {player} sent {selectedPlayer} &f㒖&7{value} Tradebars"

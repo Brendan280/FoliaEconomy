@@ -1,0 +1,27 @@
+name: FoliaEconomy
+version: '1.0'
+main: foliaeconomy.FoliaEconomy
+api-version: '1.21'
+folia-supported: true
+
+commands:
+  bal:
+    description: Get player balance
+    usage: /bal
+  pay:
+    description: Pay a player
+    usage: /pay
+  setbal:
+    description: Set a player's balance
+    usage: /setbal
+    permission: eldin.staff
+  baltop:
+    description: The top players by balance
+    usage: /baltop
+  history:
+    description: The transaction history
+    usage: /history
+  adminhistory:
+    description: The transaction history of a player
+    usage: /adminhistory <player>
+    permission: eldin.staff
