@@ -24,4 +24,4 @@ commands:
   adminhistory:
     description: The transaction history of a player
     usage: /adminhistory <player>
-    permission: eldin.staff
+    permission: foliaeconomy.admin

@@ -1,27 +1,27 @@
 database:
   host: localhost
   user: economy
-  password: fortnite11
+  password: password
   databaseName: economy
   port: 3306
 
-currencyName: " Tradebars"
-USTime: true
+currencyName: " Dollars" #The currency name used
+USTime: true #Whether to use US time format
 messages:
-  defaultColor: "§b"
-  prefix: "㔥 "
+  defaultColor: "§b" #A default colour for plugin output, such as /baltop
+  prefix: "Economy " #A prefix to use at the beginning of some messages
   balance:
-    selfBalance: "&8Your balance is &f㒖&7{value} Tradebars"
-    otherBalance: "&7{player}'s&8 balance is &f㒖&7{value} Tradebars"
-    setBalance: "&7{player}'s&8 balance is set to &f㒖&7{value} Tradebars"
+    selfBalance: "&8Your balance is {value} Dollars" #The message displayed when a player checks their own balance
+    otherBalance: "&7{player}'s&8 balance is {value} Dollars" #The message displayed when a player checks the balance of another player
+    setBalance: "&7{player}'s&8 balance is set to {value} Dollars" #The message displayed when a player's balance is set
   payment:
-    paymentSent: "&8You have payed &7{player} &f㒖&7{value} Tradebars"
-    paymentReceived: "&7{player}&8 has paid you &f㒖&7{value} Tradebars"
-    paymentNoMoney: "&cYou don't have enough money to transfer &7{player} &f㒖&7{value} Tradebars"
+    paymentSent: "&8You have payed &7{player} {value} Dollars" #The message displayed when the sender sends money to another player
+    paymentReceived: "&7{player}&8 has paid you {value} Dollars" #The message displayed when the sender receives money from another player
+    paymentNoMoney: "&cYou don't have enough money to transfer &7{player} {value} Dollars" #The message displayed when the sender does not have the money to send to another player
   history:
     standardHistory:
-      moneyFromPlayer: "&2{time}&8 You sent &f㒖&7{value} Tradebars to {player}"
-      moneyToPlayer: "&{time}&8 {player} sent you &f㒖&7{value} Tradebars"
+      moneyFromPlayer: "&2{time}&8 You sent {value} Dollars to {player}" #The message displayed when the sender sent money to another player
+      moneyToPlayer: "&{time}&8 {player} sent you {value} Dollars" #The message displayed when the sender received money from another player
     adminHistory:
-      moneyFromPlayer: "&2{time}&8 {selectedPlayer} sent &f㒖&7{value} Tradebars to {player}"
-      moneyToPlayer: "&2{time}&8 {player} sent {selectedPlayer} &f㒖&7{value} Tradebars"
+      moneyFromPlayer: "&2{time}&8 {selectedPlayer} sent {value} Dollars to {player}" #The message displayed when the selected player sent money to another player
+      moneyToPlayer: "&2{time}&8 {player} sent {selectedPlayer} {value} Dollars" #The message displayed when the selected player received money from another player
