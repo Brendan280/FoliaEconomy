@@ -14,7 +14,7 @@ commands:
   setbal:
     description: Set a player's balance
     usage: /setbal
-    permission: eldin.staff
+    permission: foliaeconomy.admin
   baltop:
     description: The top players by balance
     usage: /baltop

@@ -33,7 +33,7 @@ public class History implements CommandExecutor
                 isValidInteger = true;
             }
             catch(NumberFormatException e) {
-                player.sendMessage("Command requires a whole number that is at least 1");
+                player.sendMessage(ChatColor.RED + "Command requires a whole number that is at least 1");
             }
 
             if(isValidInteger) {
@@ -48,7 +48,7 @@ public class History implements CommandExecutor
                 }
 
                 else {
-                    player.sendMessage("The number needs to be at least 1");
+                    player.sendMessage(ChatColor.RED + "The number needs to be at least 1");
                 }
             }
         }

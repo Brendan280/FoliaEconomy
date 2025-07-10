@@ -25,7 +25,7 @@ public class Balance implements CommandExecutor {
             OfflinePlayer target = Bukkit.getOfflinePlayerIfCached(args[0]);
 
             if(target != null) {
-                player.sendMessage(prefix + ChatColor.translateAlternateColorCodes('&', getBalanceString(target.getName(), GetBalance.getBalance(player.getUniqueId()), false)));
+                player.sendMessage(prefix + ChatColor.translateAlternateColorCodes('&', getBalanceString(target.getName(), GetBalance.getBalance(target.getUniqueId()), false)));
             }
 
             else {

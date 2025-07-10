@@ -38,11 +38,11 @@ public class Pay implements CommandExecutor {
                     {
                         DepositFunds.depositFunds(target.getUniqueId(), paymentParsed, false); //Deposit money to the receiver
                         WithdrawFunds.withdrawFunds(player.getUniqueId(), paymentParsed); //Withdraw money from the sender
-                        player.sendMessage(prefix + ChatColor.translateAlternateColorCodes('&', getPaymentString(player.getName(), paymentParsed, true))); //Send a message to the sender
+                        player.sendMessage(prefix + ChatColor.translateAlternateColorCodes('&', getPaymentString(target.getName(), paymentParsed, true))); //Send a message to the sender
                         logPayment(player.getUniqueId(), target.getUniqueId(), paymentParsed);
                         if(target.isOnline()) {
                             Player playerTarget = (Player) target;
-                            playerTarget.sendMessage(prefix + ChatColor.translateAlternateColorCodes('&', getPaymentString(player.getName(), paymentParsed, false))); //Send a message to the receiver
+                            playerTarget.sendMessage(prefix + ChatColor.translateAlternateColorCodes('&', getPaymentString(target.getName(), paymentParsed, false))); //Send a message to the receiver
                         }
                     }
 

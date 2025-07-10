@@ -21,7 +21,7 @@ messages:
   history:
     standardHistory:
       moneyFromPlayer: "&2{time}&8 You sent {value} Dollars to {player}" #The message displayed when the sender sent money to another player
-      moneyToPlayer: "&{time}&8 {player} sent you {value} Dollars" #The message displayed when the sender received money from another player
+      moneyToPlayer: "&2{time}&8 {player} sent you {value} Dollars" #The message displayed when the sender received money from another player
     adminHistory:
       moneyFromPlayer: "&2{time}&8 {selectedPlayer} sent {value} Dollars to {player}" #The message displayed when the selected player sent money to another player
       moneyToPlayer: "&2{time}&8 {player} sent {selectedPlayer} {value} Dollars" #The message displayed when the selected player received money from another player
